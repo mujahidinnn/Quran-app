@@ -1,0 +1,78 @@
+.main-quran-warpper {
+  height: 100vh;
+  z-index: 50;
+}
+
+.wrap-main-list {
+  background: #d7eadd;
+  margin: 0;
+  padding: 0 10px 0 10px;
+  border: 1px solid transparent;
+}
+
+.wrap-head-surah {
+  font-family: "Noto Naskh Arabic", serif;
+  text-align: center;
+  z-index: 50;
+  background: #d7eadd;
+  margin: 0;
+  border: 1px solid transparent;
+}
+
+.wrap-detail-surah {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-family: "Noto Naskh Arabic", serif;
+}
+
+.basmallah {
+  background: #e1eee6;
+  display: flex;
+  justify-content: center;
+  font-family: "Noto Naskh Arabic", serif;
+  font-size: 18px;
+  border: 12px solid transparent;
+  margin: 0;
+}
+
+.number-ayah {
+  display: flex;
+  width: 30px;
+  border-radius: 40% 60% 100% 0% / 40% 0% 100% 60% ;
+  border-radius: 0% 100% 100% 0% / 0% 0% 100% 100%;
+  background: #498553;
+  color: #e9f3ed;
+  background: #d7eadd;
+  color: #498553;
+  padding: 6px 3px;
+  margin: 0 0 0 -10px;
+}
+.text-arabic {
+  text-align: right;
+  margin-top: 0;
+  font-family: "Noto Naskh Arabic", serif;
+  font-size: 18px;
+}
+
+.wrap-main-list:nth-child(1n + 1) {
+  background: #e1eee6;
+}
+.wrap-main-list:nth-child(2n + 2) {
+  background: #e9f3ed;
+}
+
+.display-loading {
+  text-align: center;
+  margin-top: 15%;
+}
+.book {
+  font-size: 300px;
+  color: #498553f6;
+}
+
+.text-arabic-loading {
+  text-align: center;
+  font-family: "Noto Naskh Arabic", serif;
+  font-size: 20px;
+}

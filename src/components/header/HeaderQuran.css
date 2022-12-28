@@ -1,0 +1,27 @@
+.wrapper-header {
+  display: flex;
+  background: #498553;
+  color: #e9f3ed;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  z-index: 100;
+  /* position: sticky; */
+  /* top: 0; */
+}
+
+.logo-header {
+  font-size: 28px;
+  font-weight: 600;
+}
+.title-header {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width:768px){
+  .wrapper-header{
+    position: sticky;
+    top: 0;
+  }
+}

@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Fragment, useState } from "react";
+import SidebarQuran from "./components/sidebar/SidebarQuran";
+import MainQuran from "./components/main/MainQuran";
+import HeaderQuran from "./components/header/HeaderQuran";
 
 function App() {
+  const [number, setNumber] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <HeaderQuran />
+      <div className="App">
+        <div className="wrapper-sidebar-quran">
+          <SidebarQuran
+            setNumber={(res) => {
+              setNumber(res);
+            }}
+          />
+        </div>
+        <div className="wrapper-main-quran">
+          <MainQuran number={number} />
+        </div>
+      </div>
+    </Fragment>
   );
 }
 

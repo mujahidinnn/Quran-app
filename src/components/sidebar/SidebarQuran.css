@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap");
+
+.wrapper-list-surah {
+  background: #e9f3ed;
+  height: max-content;
+  padding: 0.5px 7px;
+  margin: 5px;
+  border-radius: 4px;
+  text-align: center;
+  transition: 0.2s;
+  box-sizing: border-box;
+  line-height: 5px;
+}
+.wrapper-list-surah:hover {
+  cursor: pointer;
+  background: #e1eee6;
+}
+
+.warp-card-name-surah {
+  display: flex;
+}
+
+.nomor-list-surah {
+  margin: 0 0 0 -7px;
+  border-radius: 0% 100% 100% 0% / 0% 0% 100% 100%;
+  border-radius: 20% 80% 100% 0% / 20% 0% 100% 80%;
+  background: #498553;
+  color: #e9f3ed;
+  width: 30px;
+  padding: 8px 1px;
+}
+.wrap-name-surah {
+  margin: 0 auto;
+}
+.name-surah-arabic {
+  font-size: 18px;
+  font-family: "Noto Naskh Arabic", serif;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper-list-surah {
+    min-width: 50px;
+    padding: 0.5px 2px;
+  }
+  .name-surah-arabic {
+    font-size: 14px;
+  }
+  .name-surah-indo {
+    font-size: 7px;
+  }
+  .nomor-list-surah {
+    width: 10px;
+    padding: 4px 2px;
+    font-size: 7px;
+    margin: 0;
+  }
+}
