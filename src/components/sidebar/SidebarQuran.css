@@ -32,6 +32,12 @@
 .wrap-name-surah {
   margin: 0 auto;
 }
+.wrap-name-surah p {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
 .name-surah-arabic {
   font-size: 18px;
   font-family: "Noto Naskh Arabic", serif;
