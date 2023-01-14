@@ -11,28 +11,26 @@ const MainQuran = ({ number }) => {
   const [translate, setTranslate] = useState({});
   const [loading, setLoading] = useState(false);
 
-  const getQuranAPI = () => {
-    setLoading(true);
-
-    fetch(`https://quran-endpoint.vercel.app/quran/${number}`, {
-      method: "GET",
-      redirect: "follow",
-    })
-      .then((response) => response.json())
-      .then((result) => {
-        console.log(result.data);
-        setQuran(result.data.ayahs);
-        setNameAr(result.data.asma.ar);
-        setNameId(result.data.asma.id);
-        setType(result.data.type);
-        setAyat(result.data);
-        setTranslate(result.data.asma.translation);
-        setLoading(false);
-      })
-      .catch((error) => console.log("error", error));
-  };
-
   useEffect(() => {
+    const getQuranAPI = () => {
+      setLoading(true);
+      fetch(`https://quran-endpoint.vercel.app/quran/${number}`, {
+        method: "GET",
+        redirect: "follow",
+      })
+        .then((response) => response.json())
+        .then((result) => {
+          console.log(result.data);
+          setQuran(result.data.ayahs);
+          setNameAr(result.data.asma.ar);
+          setNameId(result.data.asma.id);
+          setType(result.data.type);
+          setAyat(result.data);
+          setTranslate(result.data.asma.translation);
+          setLoading(false);
+        })
+        .catch((error) => console.log("error", error));
+    };
     getQuranAPI();
   }, [number]);
   return (
