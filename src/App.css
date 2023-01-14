@@ -1,17 +1,18 @@
 .App {
-  /* text-align: center; */
   display: flex;
   background: #d7eadd;
-   color: #498553;
+  color: #498553;
 }
 
 .wrapper-sidebar-quran {
-  height: 96vh;
+  height: 92vh;
   overflow-y: scroll;
   display: block;
   flex: 2;
   position: sticky;
-  top: 0;
+  top: 7%;
+  z-index: 10;
+  background: #d7eadd;
 }
 .wrapper-sidebar-quran::-webkit-scrollbar {
   background: #e9f3ed;
@@ -42,15 +43,15 @@
   height: 85px;
 }
 
-@media screen and (max-width:768px) {
-  .App{
+@media screen and (max-width: 768px) {
+  .App {
     display: flex;
     flex-direction: column;
   }
-  .wrapper-sidebar-quran{
+  .wrapper-sidebar-quran {
     display: flex;
   }
-  .wrapper-sidebar-quran::-webkit-scrollbar{
+  .wrapper-sidebar-quran::-webkit-scrollbar {
     height: 5px;
   }
 }
